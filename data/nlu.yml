@@ -1,0 +1,642 @@
+version: "2.0"
+
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - vincent
+    - vincent-mcvincent
+
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: car_type
+  examples: |
+    - Help me find out good car for me 
+    - I am looking for a car
+    - which car fullfill my requirements
+
+- intent: sedan
+  examples: |
+    - Sedan
+    - sedan
+
+- intent: hatchback
+  examples: |
+    - Hatckback
+    - hatchback
+
+- intent: suvmuv
+  examples: |
+    - Suv
+    - suv
+    - Muv
+    - muv
+
+- intent: van
+  examples: |
+    - van
+    - Van
+
+
+- intent: ALTO_800
+  examples: |
+    - ALTO 800
+    - alto 800
+    - alto
+
+- intent: S_Pressco
+  examples: |
+    - S-Pressco
+    - S-Presso
+    - s-pressco
+    - s-presso
+
+- intent: ALTO_LXI
+  examples: |
+    - New Safety Variant ALTO 800 LXI
+
+- intent: ALTO_LXI(O)
+  examples: |
+    - New Safety Variant ALTO 800 LXI (O)
+
+- intent: ALTO_STD
+  examples: |
+    - New Safety Variant ALTO 800 STD
+
+- intent: ALTO_STD(O)
+  examples: |
+    - New Safety Variant ALTO 800 STD (O)
+
+- intent: ALTO_VXI
+  examples: |
+    - New Safety Variant ALTO 800 VXI
+
+- intent: ALTO_VXI_PLUS
+  examples: |
+    - New Safety Variant ALTO 800 VXI PLUS    
+
+- intent: S_Presso_Std
+  examples: |
+    - S-Presso Std   
+
+- intent: S_Presso_Std(O)
+  examples: |
+    - S-Presso Std (O)  
+
+- intent: S_Presso_Lxi
+  examples: |
+    - S-Presso Lxi   
+
+- intent: S_Presso_Lxi(O)
+  examples: |
+    - S-Presso Lxi (O)
+
+- intent: S_Presso_Vxi
+  examples: |
+    - S-Presso Vxi   
+
+- intent: S_Presso_Vxi(O)
+  examples: |
+    - S-Presso Vxi (O) 
+
+- intent: S_Presso_Vxi_Plus
+  examples: |
+    - S-Presso Vxi Plus 
+
+- intent: S_Presso_Vxi_AGS
+  examples: |
+    - S-Presso Vxi AGS 
+
+- intent: S_Presso_Vxi(O)_AGS
+  examples: |
+    - S-Presso Vxi (O) AGS  
+
+- intent: S_Presso_Vxi_Plus_AGS
+  examples: |
+    - S-Presso Vxi Plus AGS
+
+- intent: celerio
+  examples: |
+    - celerio
+    - Celerio
+
+- intent: Celerio_LXIBSVI
+  examples: |
+    - CELERIO LXI BS VI
+    - CELERIO LXI BS VI
+
+- intent: Celerio_LXI(O)BSVI
+  examples: |
+    - CELERIO LXI (O) BS VI
+    - CELERIO LXI (O) BS VI
+
+- intent: Celerio_VXIBSVI
+  examples: |
+    - CELERIO VXI BS VI
+    - CELERIO VXI BS VI
+
+- intent: Celerio_VXI(O)BSVI
+  examples: |
+    - CELERIO VXI (O) BS VI
+    - CELERIO VXI (O) BS VI
+
+- intent: Celerio_ZXIBSVI
+  examples: |
+    - CELERIO ZXI BS VI
+    - CELERIO ZXI BS VI
+
+- intent: Celerio_ZXI(O)BSVI
+  examples: |
+    - CELERIO ZXI (O) BS VI
+    - CELERIO ZXI (O) BS VI
+
+- intent: Celerio_VXIAMTBSVI
+  examples: |
+    - CELERIO VXI AMT BS VI
+    - CELERIO VXI AMT BS VI
+
+- intent: Celerio_VXIAMT(O)BSVI
+  examples: |
+    - CELERIO VXI AMT (O) BS VI
+    - CELERIO VXI AMT (O) BS VI
+
+- intent: Celerio_ZXIAMTBSVI
+  examples: |
+    - CELERIO ZXI AMT BS VI
+    - CELERIO ZXI AMT BS VI
+
+- intent: Celerio_ZXIAMT(O)BSVI
+  examples: |
+    - CELERIO ZXI AMT (O) BS VI
+    - CELERIO ZXI AMT (O) BS VI
+
+- intent: Celerio_XVXIBSVI
+  examples: |
+    - CELERIO X VXI BS VI
+    - CELERIO X VXI BS VI
+
+- intent: Celerio_XVXI(O)BSVI
+  examples: |
+    - CELERIO X VXI (O) BS VI
+    - CELERIO X VXI (O) BS VI
+
+- intent: Celerio_XZXIBSVI
+  examples: |
+    - CELERIO X ZXI BS VI
+    - CELERIO X ZXI BS VI
+
+- intent: Celerio_XZXI(O)BSVI
+  examples: |
+    - CELERIO X ZXI (O) BS VI
+    - CELERIO X ZXI (O) BS VI
+
+- intent: Celerio_XVXIAMTBSVI
+  examples: |
+    - CELERIO X VXI AMT BS VI
+    - CELERIO X VXI AMT BS VI
+
+- intent: Celerio_XVXIAMT(O)BSVI
+  examples: |
+    - CELERIO X VXI AMT (O) BS VI
+    - CELERIO X VXI AMT (O) BS VI
+
+- intent: Celerio_XZXIAMTBSVI
+  examples: |
+    - CELERIO X ZXI AMT BS VI
+    - CELERIO X ZXI AMT BS VI
+
+- intent: Celerio_XZXIAMT(O)BSVI
+  examples: |
+    - CELERIO X ZXI AMT (O) BS VI
+    - CELERIO X ZXI AMT (O) BS VI
+
+- intent: New Dzire
+  examples: |
+    - New Dzire 
+    - new dzire
+
+- intent: New Ertiga
+  examples: |
+    - New Ertiga
+    - new ertiga
+
+- intent: New DZIRE LXI BS VI
+  examples: |
+    - New DZIRE LXI BS VI
+    - new dzire LXI BS VI
+
+- intent: New DZIRE VXI BS VI
+  examples: |
+    - New DZIRE VXI BS VI
+    - new dzire VXI BS VI
+
+- intent: New DZIRE ZXI BS VI
+  examples: |
+    - New DZIRE ZXI BS VI
+    - new dzire ZXI BS VI
+
+- intent: New DZIRE ZXI Plus BS VI
+  examples: |
+    - New DZIRE ZXI Plus BS VI
+    - new dzire ZXI plus BS VI
+
+- intent: New DZIRE VXI AMT BS VI 
+  examples: |
+    - New DZIRE VXI AMT BS VI
+    - new dzire VXI AMT BS VI
+
+- intent: New DZIRE ZXI AMT BS VI 
+  examples: |
+    - New Dzire ZXI AMT BS VI
+    - new dzire ZXI AMT BS VI
+
+- intent: New DZIRE ZXI Plus AMT BS VI
+  examples: |
+    - New Dzire ZXI Plus AMT BS VI
+    - new dzire ZXI Plus AMT BS VI
+
+- intent: New Gen Ertiga Smart Hybrid Automatic VXI BS VI
+  examples: |
+    - New Gen Ertiga Smart Hybrid Automatic VXI BS VI
+    - new gen ertiga smart hybrid automatic VXI BS VI
+
+- intent: New Gen Ertiga Smart Hybrid Automatic ZXI BS VI 
+  examples: |
+    - New Gen Ertiga Smart Hybrid Automatic ZXI BS VI
+    - new gen ertiga smart hybrid automatic ZXI BS VI
+
+- intent: New Gen Ertiga Smart Hybrid LXI BS VI
+  examples: |
+    - New Gen Ertiga Smart Hybrid LXI BS VI
+    - new gen ertiga smart hybrid LXI BS VI
+
+- intent: New Gen Ertiga Smart Hybrid VXI BS VI 
+  examples: |
+    - New Gen Ertiga Smart Hybrid VXI BS VI
+    - new gen ertiga smart hybrid VXI BS VI
+
+- intent: New Gen Ertiga Smart Hybrid ZXI BS VI
+  examples: |
+    - New Gen Ertiga Smart Hybrid ZXI BS VI
+    - new gen ertiga smart hybrid ZXI BS VI
+
+- intent: New Gen Ertiga Smart Hybrid ZXI Plus BS VI
+  examples: |
+    - New Gen Ertiga Smart Hybrid ZXI Plus BS VI
+    - new gen ertiga smart hybrid ZXI plusBS VI
+
+- intent : New Swift
+  examples: |
+    - New Swift
+    - new swift
+
+- intent : New Swift ZXI AGS BS VI
+  examples: |
+    - NEW SWIFT ZXI AGS BS VI
+    - NEW SWIFT ZXI AGS BS VI
+
+- intent : New Swift LXI BS VI (2021)
+  examples: |
+    - NEW SWIFT LXI BS VI (2021)
+    - NEW SWIFT LXI BS VI (2021)
+
+- intent : New Swift VXI BS VI (2021)
+  examples: |
+    - NEW SWIFT VXI BS VI (2021)
+    - NEW SWIFT VXI BS VI (2021)
+
+- intent : New Swift ZXI BS VI (2021)
+  examples: |
+    - NEW SWIFT ZXI BS VI (2021)
+    - NEW SWIFT ZXI BS VI (2021)
+
+- intent : New Swift ZXI PLUS BS VI (2021)
+  examples: |
+    - NEW SWIFT ZXI PLUS BS VI (2021)
+    - NEW SWIFT ZXI PLUS BS VI (2021)
+
+- intent : New Swift ZXI PLUS BS VI (2021) (DUAL)
+  examples: |
+    - NEW SWIFT ZXI PLUS BS VI (2021) (DUAL)
+    - NEW SWIFT ZXI PLUS BS VI (2021) (DUAL)
+
+- intent : New Swift VXI AMT BS VI (2021)
+  examples: |
+    - NEW SWIFT VXI AMT BS VI (2021)
+    - NEW SWIFT VXI AMT BS VI (2021)
+
+- intent : New Swift ZXI AMT BS VI (2021)
+  examples: |
+    - NEW SWIFT ZXI AMT BS VI (2021)
+    - NEW SWIFT ZXI AMT BS VI (2021)
+
+- intent : New Swift ZXI PLUS AMT BS VI (2021)
+  examples: |
+    - NEW SWIFT ZXI PLUS AMT BS VI (2021)
+    - NEW SWIFT ZXI PLUS AMT BS VI (2021)
+
+
+- intent : New Swift ZXI PLUS AMT BS VI (2021) (DUAL)
+  examples: |
+    - NEW SWIFT ZXI PLUS AMT BS VI (2021) (DUAL)
+    - NEW SWIFT ZXI PLUS AMT BS VI (2021) (DUAL)
+
+
+- intent: VitaraBrezza
+  examples: |
+    - vitara brezza
+    - Vitara Brezza
+
+- intent: Eeco
+  examples: |
+    - eeco
+    - Eeco
+
+- intent: VitaraBrezzaLXI
+  examples: |
+    - Vitara Brezza LXI BS VI
+    - vitara breeza LXI BS VI
+
+- intent: VitaraBreezaVXI
+  examples: |
+    - Vitara Breeza VXI BS VI
+    - vitara breeza VXI BS VI
+
+- intent: VitaraBrezzaZXIZ
+  examples: |
+    - Vitara Brezza ZXI BS VI
+    - vitara brezza ZXI BS VI
+
+- intent: VitaraBrezzaZXIBSP
+  examples: |
+    - Vitara Brezza ZXI Plus BS VI
+    - vitara brezza ZXI plus BS VI
+
+- intent: VitaraBrezzaZXIBSDual
+  examples: |
+    - Vitara Brezza ZXI plus BS VI (Dual)
+    - vitara Brezza ZXI plus BS VI (Dual)
+
+- intent: VitaraBrezzaVXIAT
+  examples: |
+    - Vitara Brezza VXI AT BS VI
+    - vitara brezza VXI AT BS VI
+
+- intent: VitaraBreezaZXIAT
+  examples: |
+    - Vitara Brezza ZXI AT BS VI
+    - vitara brezza ZXI AT BS VI
+
+- intent: VitaraBreezaZXIATP
+  examples: |
+    - Vitara Breeza ZXI plus AT BS VI
+    - vitara brezza ZXI plus AT BS VI
+
+- intent: VitaraBrezzaZXIATDual
+  examples: |
+    - Vitara Brezza ZXI plus AT BS VI (Dual)
+    - vitara brezza ZXI plus AT BS VI (Dual)
+
+- intent: NewEeco5Seater
+  examples: |
+    - New Eeco five Seater Std BS VI
+    - new eeco five Seater std BS VI
+
+- intent: NewEeco5SeaterAC
+  examples: |
+    - New Eeco five Seater AC BS VI
+    - new eeco five Seater AC BS VI
+
+- intent: NewEeco7Seater
+  examples: |
+    - New Eeco seven Seater Std BS VI
+    - new eeco seven Seater std BS VI
+    - NEW EECO seven Seater Std BS VI
+
+- intent: Wagnor
+  examples: |
+    - Wagnor
+    - Wagon R
+    - wagon r
+
+- intent: WagonR_Vxi_AGS(1.0L)
+  examples: |
+    - WagonR Vxi AGS 1.0L BS VI
+    - WagonR Vxi AGS 1.0L BS VI
+        
+- intent: WagonR_Vxi(O)_AGS(1.0L)
+  examples: |
+    - WagonR Vxi (O) AGS 1.0L BS VI
+    - WagonR Vxi (O) AGS 1.0L BS VI
+
+
+- intent: WagonR_Lxi(1.0L) 
+  examples: |
+    - WagonR Lxi 1.0L BS VI
+    - WagonR Lxi 1.0L BS VI
+
+
+- intent: WagonR_Lxi(O)(1.0L)
+  examples: |
+    - WagonR Lxi (O) 1.0L BS VI
+    - WagonR Lxi (O) 1.0L BS VI
+
+
+- intent: WagonR_Vxi(1.0L)
+  examples: |
+    - WagonR Vxi 1.0L BS VI
+    - WagonR Vxi 1.0L BS VI
+
+         
+- intent: WagonR_Vxi_(O)(1.0L) 
+  examples: |
+    - WagonR Vxi (O) 1.0L BS VI
+    - WagonR Vxi (O) 1.0L BS VI
+
+           
+- intent: WagonR_Vxi(1.2L)_AGS
+  examples: |
+    - WagonR Vxi 1.2 AGS BS VI
+    - WagonR Vxi 1.2 AGS BS VI
+
+           
+- intent: WagonR_Vxi(O)(1.2L)_AGS
+  examples: |
+    - WagonR Vxi (O) 1.2L AGS BS VI
+    - WagonR Vxi (O) 1.2L AGS BS VI
+           
+- intent: WagonR_Zxi(1.2L)_AGS
+  examples: |
+    - WagonR Zxi 1.2L AGS BS VI
+    - WagonR Zxi 1.2L AGS BS VI
+
+- intent: WagonR_Vxi(1.2L)
+  examples: |
+    - WagonR Vxi 1.2L BS VI
+    - WagonR Vxi 1.2L BS VI
+              
+- intent: WagonR_Vxi(O)(1.2L)
+  examples: |
+    - WagonR Vxi (O) 1.2L BS VI
+    - WagonR Vxi (O) 1.2L BS VI
+
+           
+- intent: WagonR_Zxi(1.2L)
+  examples: |
+    - WagonR Zxi 1.2L BS VI
+    - WagonR Zxi 1.2L BS VI
+
+- intent: car_brochures
+  examples: |
+    - I want to know more about [Alto 800](model)
+    - show me brochure for [Alto 800](model) 
+    - Tell me more information about [ALTO 800](model)
+    - I want to know more about [Alto](model)
+    - show me brochure for [Alto](model) 
+    - Tell me more information about [Alto](model)
+    
+    - I want to know more about [S-Pressco](model)
+    - show me brochure for [S-Pressco](model) 
+    - tell me more information about [S-Pressco](model)
+    - I want to know more about [s-presso](model)
+    - show me brochure for [s-presso](model) 
+    - tell me more information about [s-presso](model)
+    
+    - I want to know more about [Celerio](model)
+    - show me brochure for [Celerio](model) 
+    - tell me more information about [Celerio](model)
+    - I want to know more about [celerio](model)
+    - show me brochure for [celerio](model) 
+    - tell me more information about [celerio](model)
+    
+    - I want to know more about [NEW DZIRE](model)
+    - show me brochure for [NEW DZIRE](model) 
+    - tell me more information about [NEW DZIRE](model)
+    - I want to know more about [New Dzire](model)
+    - show me brochure for [New Dzire](model) 
+    - tell me more information about [New Dzire](model)
+
+    - I want to know more about [New Ertiga](model)
+    - show me brochure for [NEW ERTIGA](model) 
+    - tell me more information about [NEW ERTIGA](model)
+    - I want to know more about [ertiga](model)
+    - show me brochure for [ertiga](model) 
+    - tell me more information about [ertiga](model)
+
+
+
+    - I want to know more about [New Swift](model)
+    - show me brochure for [New Swift](model) 
+    - tell me more information about [New Swift](model)
+    - I want to know more about [new swift](model)
+    - show me brochure for [new swift](model) 
+    - tell me more information about [new swift](model)
+
+
+    - I want to know more about [Vitara Brezza](model)
+    - show me brochure for [Vitara Brezza](model) 
+    - tell me more information about [Vitara Brezza](model)
+    - I want to know more about [vitara brezza](model)
+    - show me brochure for [vitara brezza](model) 
+    - tell me more information about [vitara brezza](model)
+
+    - I want to know more about [Eeco](model)
+    - show me brochure for [Eeco](model) 
+    - tell me more information about [Eeco](model)
+    - I want to know more about [eeco](model)
+    - show me brochure for [eeco](model) 
+    - tell me more information about [eeco](model)
+
+
+- intent: EMI
+  examples: |
+    - I want to know about EMI
+    - I want to Buy car on EMI
+    - please tell me about EMI 
+    - EMI ENQUIRY 
+    
+- intent: book_appointment
+  examples: |
+    - book an appointment
+    - book an appointment to nearest Maruti Suzuki showroom
+    - please provide the booking to showroom visit
+    - want to visit the showroom
+    - want to visit the showroom for test drive
+    - want to visit the nearest Maruti Suzuki showroom
+    - showroom loaction near me
+    
+- intent: start
+  examples: |
+    - start
+    - /start
+    
+    

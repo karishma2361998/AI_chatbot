@@ -1,0 +1,752 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: start path
+  steps:
+  - intent: start
+  - action: utter_start
+
+- story: car_type path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: car_type
+  - action: utter_car_type
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: hatchback path 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hatchback
+  - action: action_car_hatchback
+
+- story: sedan path 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sedan
+  - action: action_car_sedan
+
+- story: suvmuv path 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: suvmuv
+  - action: action_car_suvmuv
+
+- story: van path 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: van
+  - action: action_car_van
+
+
+- story: ALTO_800 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_800
+  - action: utter_ALTO_800
+
+- story: S_Pressco path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Pressco
+  - action: utter_S_Pressco
+
+- story: ALTO_LXI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_LXI
+  - action: utter_ALTO_LXI
+
+- story: ALTO_LXI(O) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_LXI(O)
+  - action: utter_ALTO_LXI(O)
+
+- story: ALTO_STD path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_STD
+  - action: utter_ALTO_STD
+
+- story: ALTO_STD(O) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_STD(O)
+  - action: utter_ALTO_STD(O)
+
+- story: ALTO_VXI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_VXI
+  - action: utter_ALTO_VXI
+
+- story: ALTO_VXI_PLUS path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ALTO_VXI_PLUS
+  - action: utter_ALTO_VXI_PLUS
+ 
+- story: S_Presso_Std path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Std
+  - action: utter_S_Presso_Std 
+
+- story: S_Presso_Std(O) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Std(O)
+  - action: utter_S_Presso_Std(O) 
+
+- story: S_Presso_Lxi path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Lxi
+  - action: utter_S_Presso_Lxi 
+
+- story: S_Presso_Lxi(O) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Lxi(O)
+  - action: utter_S_Presso_Lxi(O)
+
+- story: S_Presso_Vxi path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Vxi
+  - action: utter_S_Presso_Vxi 
+
+- story: S_Presso_Vxi(O) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Vxi(O)
+  - action: utter_S_Presso_Vxi(O)
+
+- story: S_Presso_Vxi_Plus path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Vxi_Plus
+  - action: utter_S_Presso_Vxi_Plus 
+
+- story: S_Presso_Vxi_AGS path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Vxi_AGS
+  - action: utter_S_Presso_Std 
+
+- story: S_Presso_Vxi(O)_AGS path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Vxi(O)_AGS
+  - action: utter_S_Presso_Vxi(O)_AGS
+
+- story: S_Presso_Vxi_Plus_AGS
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: S_Presso_Vxi_Plus_AGS
+  - action: utter_S_Presso_Vxi_Plus_AGS
+
+- story: celerio path 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: celerio
+  - action: utter_celerio
+
+
+- story: Celerio_LXIBSVI path 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_LXIBSVI
+  - action: utter_Celerio_LXIBSVI
+
+
+- story: Celerio_LXI(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_LXI(O)BSVI
+  - action: utter_Celerio_LXI(O)BSVI
+
+- story: Celerio_VXIBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_VXIBSVI
+  - action: utter_Celerio_VXIBSVI
+
+
+- story: Celerio_VXI(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_VXI(O)BSVI
+  - action: utter_Celerio_VXI(O)BSVI
+
+- story: Celerio_ZXIBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_ZXIBSVI
+  - action: utter_Celerio_ZXIBSVI
+
+- story: Celerio_ZXI(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_ZXI(O)BSVI
+  - action: utter_Celerio_ZXI(O)BSVI
+
+- story: Celerio_VXIAMTBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_VXIAMTBSVI
+  - action: utter_Celerio_VXIAMTBSVI
+
+- story: Celerio_VXIAMT(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_VXIAMT(O)BSVI
+  - action: utter_Celerio_VXIAMT(O)BSVI
+
+- story: Celerio_ZXIAMTBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_ZXIAMTBSVI
+  - action: utter_Celerio_ZXIAMTBSVI
+
+- story: Celerio_ZXIAMT(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_ZXIAMT(O)BSVI
+  - action: utter_Celerio_ZXIAMT(O)BSVI
+
+- story: Celerio_XVXIBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XVXIBSVI
+  - action: utter_Celerio_XVXIBSVI
+
+- story: Celerio_XVXI(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XVXI(O)BSVI
+  - action: utter_Celerio_XVXI(O)BSVI
+
+
+- story: Celerio_XZXIBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XZXIBSVI
+  - action: utter_Celerio_XZXIBSVI
+
+- story: Celerio_XZXI(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XZXI(O)BSVI
+  - action: utter_Celerio_XZXI(O)BSVI
+
+
+- story: Celerio_XVXIAMTBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XVXIAMTBSVI
+  - action: utter_Celerio_XVXIAMTBSVI
+
+- story: Celerio_XVXIAMT(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XVXIAMT(O)BSVI
+  - action: utter_Celerio_XVXIAMT(O)BSVI
+
+- story: Celerio_XZXIAMTBSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XZXIAMTBSVI
+  - action: utter_Celerio_XZXIAMTBSVI
+
+- story: Celerio_XZXIAMT(O)BSVI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Celerio_XZXIAMT(O)BSVI
+  - action: utter_Celerio_XZXIAMT(O)BSVI
+
+- story: New Dzire path
+  steps:
+  - intent: New Dzire
+  - action: utter_New Dzire
+
+
+- story: New Ertiga path
+  steps:
+  - intent: New Ertiga
+  - action: utter_New Ertiga
+
+- story: New DZIRE LXI BS VI path
+  steps:
+  - intent: New DZIRE LXI BS VI
+  - action: utter_New DZIRE LXI BS VI
+  
+- story: New DZIRE VXI BS VI path
+  steps:
+  - intent: New DZIRE VXI BS VI
+  - action: utter_New DZIRE VXI BS VI
+  
+- story: New DZIRE ZXI BS VI path
+  steps:
+  - intent: New DZIRE ZXI BS VI
+  - action: utter_New DZIRE ZXI BS VI
+
+- story: New DZIRE ZXI Plus BS VI path
+  steps:
+  - intent: New DZIRE ZXI Plus BS VI
+  - action: utter_New DZIRE ZXI Plus BS VI
+
+- story: New DZIRE VXI AMT BS VI path
+  steps:
+  - intent: New DZIRE VXI AMT BS VI 
+  - action: utter_New DZIRE VXI AMT BS VI
+
+
+- story: New DZIRE ZXI AMT BS VI path
+  steps:
+  - intent: New DZIRE ZXI AMT BS VI 
+  - action: utter_New DZIRE ZXI AMT BS VI
+
+
+- story: New DZIRE ZXI Plus AMT BS VI path
+  steps:
+  - intent: New DZIRE ZXI Plus AMT BS VI 
+  - action: utter_New DZIRE ZXI Plus AMT BS VI
+
+
+- story: New Gen Ertiga Smart Hybrid Automatic VXI BS VI path
+  steps:
+  - intent: New Gen Ertiga Smart Hybrid Automatic VXI BS VI
+  - action: utter_New Gen Ertiga Smart Hybrid Automatic VXI BS VI
+
+- story: New Gen Ertiga Smart Hybrid Automatic ZXI BS VI path
+  steps:
+  - intent: New Gen Ertiga Smart Hybrid Automatic ZXI BS VI
+  - action: utter_New Gen Ertiga Smart Hybrid Automatic ZXI BS VI
+
+  
+- story: New Gen Ertiga Smart Hybrid VXI BS VI path
+  steps:
+  - intent: New Gen Ertiga Smart Hybrid VXI BS VI
+  - action: utter_New Gen Ertiga Smart Hybrid VXI BS VI
+  
+- story: New Gen Ertiga Smart Hybrid LXI BS VI path
+  steps:
+  - intent: New Gen Ertiga Smart Hybrid LXI BS VI
+  - action: utter_New Gen Ertiga Smart Hybrid LXI BS VI
+
+- story: New Gen Ertiga Smart Hybrid ZXI BS VI path
+  steps:
+  - intent: New Gen Ertiga Smart Hybrid ZXI BS VI
+  - action: utter_New Gen Ertiga Smart Hybrid ZXI BS VI
+
+- story: New Gen Ertiga Smart Hybrid ZXI Plus BS VI path
+  steps:
+  - intent: New Gen Ertiga Smart Hybrid ZXI Plus BS VI
+  - action: utter_New Gen Ertiga Smart Hybrid ZXI Plus BS VI
+
+- story: New Swift path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift
+  - action: utter_New Swift
+
+- story: New Swift ZXI AGS BS VI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI AGS BS VI
+  - action: utter_New Swift ZXI AGS BS VI
+
+- story: New Swift LXI BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift LXI BS VI (2021)
+  - action: utter_New Swift LXI BS VI (2021)
+
+- story: New Swift VXI BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift VXI BS VI (2021)
+  - action: utter_New Swift VXI BS VI (2021)
+
+- story: New Swift ZXI BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI BS VI (2021)
+  - action: utter_New Swift ZXI BS VI (2021)
+
+- story: New Swift ZXI PLUS BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI PLUS BS VI (2021)
+  - action: utter_New Swift ZXI PLUS BS VI (2021)
+
+- story: New Swift ZXI PLUS BS VI (2021) (DUAL) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI PLUS BS VI (2021) (DUAL)
+  - action: utter_New Swift ZXI PLUS BS VI (2021) (DUAL)
+
+- story: New Swift VXI AMT BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift VXI AMT BS VI (2021)
+  - action: utter_New Swift VXI AMT BS VI (2021)
+
+- story: New Swift ZXI AMT BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI AMT BS VI (2021)
+  - action: utter_New Swift ZXI AMT BS VI (2021)
+
+- story: New Swift ZXI PLUS AMT BS VI (2021) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI PLUS AMT BS VI (2021)
+  - action: utter_New Swift ZXI PLUS AMT BS VI (2021)
+
+- story: New Swift ZXI PLUS AMT BS VI (2021) (DUAL) path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: New Swift ZXI PLUS AMT BS VI (2021) (DUAL)
+  - action: utter_New Swift ZXI PLUS AMT BS VI (2021) (DUAL)
+
+- story: VitaraBrezzaLXI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezzaLXI
+  - action: utter_VitaraBrezzaLXI
+
+
+- story: VitaraBreezaVXI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBreezaVXI
+  - action: utter_VitaraBreezaVXI
+
+- story: VitaraBrezzaZXI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezzaZXIZ
+  - action: utter_VitaraBrezzaZXIZ
+
+- story: VitaraBrezzaZXI+BS path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezzaZXIBSP
+  - action: utter_VitaraBrezzaZXIBSP
+
+- story: VitaraBrezzaZXI+BS_Dual path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezzaZXIBSDual
+  - action: utter_VitaraBrezzaZXIBSDual
+
+- story: VitaraBrezzaVXI_AT path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezzaVXIAT
+  - action: utter_VitaraBrezzaVXIAT
+
+- story: VitaraBreezaZXI_AT path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBreezaZXIAT
+  - action: utter_VitaraBreezaZXIAT 
+
+- story: VitaraBreezaZXI+AT path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBreezaZXIATP
+  - action: utter_VitaraBreezaZXIATP
+
+- story: VitaraBrezzaZXI+AT_Dual path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezzaZXIATDual
+  - action: utter_VitaraBrezzaZXIATDual
+
+- story: NewEeco5Seater path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: NewEeco5Seater
+  - action: utter_NewEecoSeater 
+
+- story: NewEeco5SeaterAC path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: NewEeco5SeaterAC
+  - action: utter_NewEeco5SeaterAC 
+
+- story: NewEeco7Seater path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: NewEeco7Seater
+  - action: utter_NewEeco7Seater
+
+- story: VitaraBrezza path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: VitaraBrezza
+  - action: utter_VitaraBrezza 
+
+- story: Eeco path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Eeco
+  - action: utter_Eeco
+
+- story: Wagnor path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Wagnor
+  - action: utter_Wagnor
+
+- story: WagonR_Vxi_AGS(1.0L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi_AGS(1.0L)
+  - action: utter_WagonR_Vxi_AGS(1.0L)
+
+- story: WagonR_Vxi(O)_AGS(1.0L) 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi(O)_AGS(1.0L) 
+  - action: utter_WagonR_Vxi(O)_AGS(1.0L)   
+
+
+- story: WagonR_Lxi(1.0L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Lxi(1.0L)
+  - action: utter_WagonR_Lxi(1.0L)
+
+- story: WagonR_Lxi(O)(1.0L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Lxi(O)(1.0L)
+  - action: utter_WagonR_Lxi(O)(1.0L)
+
+- story: WagonR_Vxi(1.0L) 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi(1.0L) 
+  - action: utter_WagonR_Vxi(1.0L)    
+
+- story: WagonR_Vxi_(O)(1.0L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi_(O)(1.0L)
+  - action: utter_WagonR_Vxi_(O)(1.0L)
+
+- story: WagonR_Vxi(1.2L)_AGS
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi(1.2L)_AGS
+  - action: utter_WagonR_Vxi(1.2L)_AGS
+
+- story: WagonR_Vxi(O)(1.2L)_AGS
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi(O)(1.2L)_AGS
+  - action: utter_WagonR_Vxi(O)(1.2L)_AGS
+
+- story: WagonR_Zxi(1.2L)_AGS
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Zxi(1.2L)_AGS
+  - action: utter_WagonR_Zxi(1.2L)_AGS  
+
+- story: WagonR_Vxi(1.2L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi(1.2L)
+  - action: utter_WagonR_Vxi(1.2L)   
+
+- story: WagonR_Vxi(O)(1.2L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Vxi(O)(1.2L)
+  - action: utter_WagonR_Vxi(O)(1.2L) 
+
+- story: WagonR_Zxi(1.2L)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: WagonR_Zxi(1.2L)
+  - action: utter_WagonR_Zxi(1.2L)
+
+- story: car_brochures path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: car_brochures
+  - action: action_car_brochures
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: EMI path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: EMI
+  - action: utter_EMI
+
+- story: location_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_appointment
+  - action: action_location_link
+  - action: location_form
+  - active_loop: location_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: Siddhi Jain
+  - slot_was_set:
+    - requested_slot: state
+  - slot_was_set:
+    - state: Maharashtra
+  - slot_was_set:
+    - requested_slot: city 
+  - slot_was_set:
+    - city: Mumbai
+  - slot_was_set:
+    - requested_slot: dealer_name
+  - slot_was_set:
+    - dealer_name:  AGENCY HOUSE (A & N ISLANDS) PVT. LTD
+  - slot_was_set:
+    - requested_slot: model_name
+  - slot_was_set:
+    - model_name: VITARA_BREEZZA
+  - slot_was_set:
+    - requested_slot: time
+  - slot_was_set:
+    - time: 3 p.m.
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - checkpoint: check_asked_question
+
+- story: date_path
+  steps:
+  - checkpoint: check_asked_question
+  - action: date_form
+  - active_loop: date_form
+  - slot_was_set:
+    - requested_slot: date
+  - slot_was_set:
+    - date: 2021-11-28
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - checkpoint: check_flow_finished
+
+- story: email_path
+  steps:
+  - checkpoint: check_flow_finished
+  - action: email_form
+  - active_loop: email_form
+  - slot_was_set:
+    - requested_slot: email
+  - slot_was_set:
+    - email: jainjanhavi@gmail.com
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit
+  - action: utter_submit
+  - action: utter_slots_values
+  - action: action_store_data
+
+  

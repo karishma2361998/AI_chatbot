@@ -1,0 +1,1365 @@
+version: "2.0"
+
+
+intents:
+- greet
+- deny
+- book_appointment
+- goodbye
+- affirm
+- mood_great
+- bot_challenge
+- start
+- car_type
+- sedan
+- hatchback
+- suvmuv
+- van
+- ALTO_800
+- S_Pressco
+- ALTO_LXI
+- ALTO_LXI(O)
+- ALTO_STD
+- ALTO_STD(O)
+- ALTO_VXI
+- ALTO_VXI_PLUS
+- S_Presso_Std
+- S_Presso_Std(O)
+- S_Presso_Lxi
+- S_Presso_Lxi(O)
+- S_Presso_Vxi
+- S_Presso_Vxi(O)
+- S_Presso_Vxi_Plus
+- S_Presso_Vxi_AGS
+- S_Presso_Vxi(O)_AGS
+- S_Presso_Vxi_Plus_AGS
+- celerio
+- Celerio_LXIBSVI
+- Celerio_LXI(O)BSVI
+- Celerio_VXIBSVI
+- Celerio_VXI(O)BSVI
+- Celerio_ZXIBSVI
+- Celerio_ZXI(O)BSVI
+- Celerio_VXIAMTBSVI
+- Celerio_VXIAMT(O)BSVI
+- Celerio_ZXIAMTBSVI
+- Celerio_ZXIAMT(O)BSVI
+- Celerio_XVXIBSVI
+- Celerio_XVXI(O)BSVI
+- Celerio_XZXIBSVI
+- Celerio_XZXI(O)BSVI
+- Celerio_XVXIAMTBSVI
+- Celerio_XVXIAMT(O)BSVI
+- Celerio_XZXIAMTBSVI
+- Celerio_XZXIAMT(O)BSVI
+- New Dzire 
+- New Ertiga
+- New DZIRE LXI BS VI
+- New DZIRE VXI BS VI
+- New DZIRE ZXI BS VI   
+- New DZIRE ZXI AMT BS VI
+- New DZIRE ZXI Plus AMT BS VI
+- New DZIRE ZXI Plus BS VI
+- New DZIRE VXI AMT BS VI 
+- New Gen Ertiga Smart Hybrid Automatic VXI BS VI
+- New Gen Ertiga Smart Hybrid Automatic ZXI BS VI
+- New Gen Ertiga Smart Hybrid LXI BS VI
+- New Gen Ertiga Smart Hybrid VXI BS VI
+- New Gen Ertiga Smart Hybrid ZXI BS VI
+- New Gen Ertiga Smart Hybrid ZXI Plus BS VI
+- New Swift
+- New Swift ZXI AGS BS VI
+- New Swift LXI BS VI (2021)
+- New Swift VXI BS VI (2021)
+- New Swift ZXI BS VI (2021)
+- New Swift ZXI PLUS BS VI (2021)
+- New Swift ZXI PLUS BS VI (2021) (DUAL) 
+- New Swift VXI AMT BS VI (2021)
+- New Swift ZXI AMT BS VI (2021)
+- New Swift ZXI PLUS AMT BS VI (2021)
+- New Swift ZXI PLUS AMT BS VI (2021) (DUAL)
+- VitaraBrezza
+- Eeco
+- VitaraBrezzaLXI
+- VitaraBreezaVXI
+- VitaraBrezzaZXIZ
+- VitaraBrezzaZXIBSP
+- VitaraBrezzaZXIBSDual
+- VitaraBrezzaVXIAT
+- VitaraBreezaZXIAT
+- VitaraBreezaZXIATP
+- VitaraBrezzaZXIATDual
+- NewEeco5Seater
+- NewEeco5SeaterAC
+- NewEeco7Seater
+- Wagnor
+- WagonR_Vxi_AGS(1.0L)
+- WagonR_Vxi(O)_AGS(1.0L) 
+- WagonR_Lxi(1.0L)
+- WagonR_Lxi(O)(1.0L)
+- WagonR_Vxi(1.0L) 
+- WagonR_Vxi_(O)(1.0L) 
+- WagonR_Vxi(1.2L)_AGS
+- WagonR_Vxi(O)(1.2L)_AGS
+- WagonR_Zxi(1.2L)_AGS
+- WagonR_Vxi(1.2L)
+- WagonR_Vxi(O)(1.2L)
+- WagonR_Zxi(1.2L)
+- car_brochures
+- EMI
+  
+
+forms:
+  location_form:
+    name:
+    - type: from_text
+    state:
+    - type: from_text
+    city:
+    - type: from_text
+    dealer_name:
+    - type: from_text
+    model_name:
+    - type: from_text
+    time:
+    - type: from_text
+  date_form:
+    date:
+    - type: from_text
+  email_form:
+    email:
+    - type: from_text
+
+slots:
+  name:
+    type: text
+  state:
+    type: text
+  city:
+    type: text
+  dealer_name:
+    type: text
+  model_name:
+    type: text
+  date:
+    type: text
+  time:
+    type: text
+  email:
+    type: text
+
+entities:
+  - model
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_car_type:
+  - text: "which type of car are u looking for sedan,hatchback,muv/suv,van"
+
+  utter_ALTO_800:
+  - text: "Type the variant of ALTO 800 from listed below in which you are interested : \n\n
+            \tNew Safety Variant ALTO 800 LXI \n
+            \tNew Safety Variant ALTO 800 LXI (O) \n
+            \tNew Safety Variant ALTO 800 STD \n 
+            \tNew Safety Variant ALTO 800 STD (O) \n
+            \tNew Safety Variant ALTO 800 VXI \n
+            \tNew Safety Variant ALTO 800 VXI PLUS"
+  
+  utter_S_Pressco:
+  - text: "Type the variant of S-Pressco from listed below in which you are interested : \n\n
+            \tS-Presso Std \n
+            \tS-Presso Std (O) \n
+            \tS-Presso Lxi \n 
+            \tS-Presso Lxi (O) \n
+            \tS-Presso Vxi \n
+            \tS-Presso Vxi (O) \n
+            \tS-Presso Vxi Plus \n
+            \tS-Presso Vxi AGS \n
+            \tS-Presso Vxi (O) AGS\n 
+            \tS-Presso Vxi Plus AGS"
+ 
+  utter_ALTO_LXI:
+  - text: "New Safety Variant ALTO 800 LXI :\n
+         
+          \tEx Showroom Price: Rs 376,400 \n
+          \tInsurance Prices: Rs 19,000 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 21,983 \n
+          \tON ROAD PRICE: Rs 418,768 \n
+          \tBasic Kit: Rs 4,000 \n
+          \tEW (Royal Platinum): Rs 5,865 \n
+          \tLifetime Road Tax & Registration: Rs 41,280 "
+
+  utter_ALTO_LXI(O):
+  - text: "New Safety Variant ALTO 800 LXI (O) :\n
+        
+          \tEx Showroom Price: Rs 380,700 \n
+          \tInsurance Prices: Rs 19,200 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 22,219  \n
+          \tON ROAD PRICE: Rs 423,504 \n
+          \tBasic Kit: Rs 4,000 \n
+          \tEW (Royal Platinum): Rs 5,935 \n
+          \tLifetime Road Tax & Registration: Rs 41,280 "
+
+  utter_ALTO_STD:
+  - text: "New Safety Variant ALTO 800 STD :\n
+        
+          \tEx Showroom Price: Rs 299,800 \n
+          \tInsurance Prices: Rs 16,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 17,769 \n
+          \tON ROAD PRICE: Rs 335,454 \n
+          \tBasic Kit: Rs 4,000 \n
+          \tEW (Royal Platinum): Rs 4,673 \n
+          \tLifetime Road Tax & Registration: Rs 31,280 "
+
+  utter_ALTO_STD(O):
+  - text: "New Safety Variant ALTO 800 STD (O) :\n
+        
+          \tEx Showroom Price: Rs 304,900 \n
+          \tInsurance Prices: Rs 16,900 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 18,050 \n
+          \tON ROAD PRICE: Rs 341,235 \n
+          \tBasic Kit: Rs 4,000 \n
+          \tEW (Royal Platinum): Rs 4,755\n
+          \tLifetime Road Tax & Registration: Rs 31,770 "
+
+  utter_ALTO_VXI:
+  - text: "New Safety Variant ALTO 800 VXI :\n
+        
+          \tEx Showroom Price: Rs 402,600 \n
+          \tInsurance Prices: Rs 19,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 23,423 \n
+          \tON ROAD PRICE: Rs 446,908 \n
+          \tBasic Kit: Rs 4,000 \n
+          \tEW (Royal Platinum): Rs 6,278 \n
+          \tLifetime Road Tax & Registration: Rs 41,540 "
+           
+  utter_ALTO_VXI_PLUS:
+  - text: "New Safety Variant ALTO 800 VXI PLUS :\n
+        
+           \tEx Showroom Price: Rs 416,100 \n
+          \tInsurance Prices: Rs 19,950 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n4
+          \t5 Years Road Tax & Registration: Rs 24,166 \n
+          \tON ROAD PRICE: Rs 461,601 \n
+          \tBasic Kit: Rs 4,000 \n
+          \tEW (Royal Platinum): Rs 6,490 \n
+          \tLifetime Road Tax & Registration: Rs 42,890 "
+
+  utter_S_Presso_Std:
+  - text: " S-Presso Std :\n
+        
+          \tEx Showroom Price: Rs 378,000 \n
+          \tInsurance Prices: Rs 18,200 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,280 \n
+          \tON ROAD PRICE: Rs 423,865 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 5,888 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Std(O):
+  - text: " S-Presso Std (O) :\n
+        
+          \tEx Showroom Price: Rs 384,000 \n
+          \tInsurance Prices: Rs 18,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,280 \n
+          \tON ROAD PRICE: Rs 430,165 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 5,983 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Lxi:
+  - text: " S-Presso Lxi :\n
+        
+          \tEx Showroom Price: Rs 416,500 \n
+          \tInsurance Prices: Rs 19,200 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,280 \n
+          \tON ROAD PRICE: Rs 463,365 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 6,490 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Lxi(O):
+  - text: " S-Presso Lxi (O) :\n
+        
+          \tEx Showroom Price: Rs 422,500 \n
+          \tInsurance Prices: Rs 19,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,280 \n
+          \tON ROAD PRICE: Rs 469,665 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 6,584 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Vxi:
+  - text: " S-Presso Vxi:\n
+        
+          \tEx Showroom Price: Rs 440,000 \n
+          \tInsurance Prices: Rs 20,200 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,280 \n
+          \tON ROAD PRICE: Rs 487,865 \n
+          \tBasic Kit: Rs 7,100\n
+          \tEW (Royal Platinum): Rs 6,856 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Vxi(O):
+  - text: " S-Presso_Vxi(O):\n
+        
+          \tEx Showroom Price: Rs 446,000\n
+          \tInsurance Prices: Rs 20,490 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,280 \n
+          \tON ROAD PRICE: Rs 494,155 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 6,950 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Vxi_Plus:
+  - text: " S-Presso Vxi Plus:\n
+        
+          \tEx Showroom Price: Rs 463,500 \n
+          \tInsurance Prices: Rs 20,800 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 26,773 \n
+          \tON ROAD PRICE: Rs 512,458 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 7,222 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Vxi_AGS:
+  - text: " S-Presso Vxi AGS :\n
+        
+          \tEx Showroom Price: Rs 490,000 \n
+          \tInsurance Prices: Rs 21,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n 
+          \t5 Years Road Tax & Registration: Rs 28,230 \n
+          \tON ROAD PRICE: Rs 541,115 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 7,635 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Vxi(O)_AGS:
+  - text: " S-Presso Vxi (O) AGS :\n
+        
+          \tEx Showroom Price: Rs 496,000 \n
+          \tInsurance Prices: Rs 21,890 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 28,560 \n
+          \tON ROAD PRICE: Rs 547,835 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 7,729 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_S_Presso_Vxi_Plus_AGS:
+  - text: " S-Presso Vxi Plus AGS :\n
+        
+          \tEx Showroom Price: Rs 751,500 \n
+          \tInsurance Prices: Rs 22,000 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 29,138 \n
+          \tON ROAD PRICE: Rs 559,023 \n
+          \tBasic Kit: Rs 7,100 \n
+          \tEW (Royal Platinum): Rs 7,894 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  
+  utter_celerio:
+  - text: "Type the variant of celerio from listed below in which you are interested : \n\n
+            \tCELERIO LXI BS VI \n
+            \tCELERIO LXI (O) BS VI \n
+            \tCELERIO VXI BS VI \n
+            \tCELERIO VXI (O) BS VI \n
+            \tCELERIO ZXI BS VI \n
+            \tCELERIO ZXI (O) BS VI \n
+            \tCELERIO VXI AMT BS VI \n
+            \tCELERIO VXI AMT (O) BS VI \n
+            \tCELERIO ZXI AMT BS VI \n
+            \tCELERIO ZXI AMT (O) BS VI \n
+            \tCELERIO X VXI BS VI \n
+            \tCELERIO X VXI (O) BS VI \n
+            \tCELERIO X ZXI BS VI \n
+            \tCELERIO X ZXI (O) BS VI \n
+            \tCELERIO X VXI AMT BS VI \n
+            \tCELERIO X VXI AMT (O) BS VI \n
+            \tCELERIO X ZXI AMT BS VI \n
+            \tCELERIO X ZXI AMT (O) BS VI"
+
+  utter_Celerio_LXIBSVI:
+  - text: "CELERIO LXI BS VI :\n\n
+           \tEx Showroom Price: Rs 465,700 \n
+           \tInsurance Prices: Rs 19,950 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 26,894 \n
+           \tON ROAD PRICE: Rs 513,929 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 7,257 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_LXI(O)BSVI:
+  - text: "CELERIO LXI (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 471,200 \n
+           \tInsurance Prices: Rs 20,000 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 27,196 \n
+           \tON ROAD PRICE: Rs 519,781 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 7,340 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_VXIBSVI:
+  - text: "CELERIO VXI BS VI :\n\n
+           \tEx Showroom Price: Rs 505,000 \n
+           \tInsurance Prices: Rs 20,800 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 29,055 \n
+           \tON ROAD PRICE: Rs 556,240 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 7,871 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_VXI(O)BSVI:
+  - text: "CELERIO VXI (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 510,500 \n
+           \tInsurance Prices: Rs 20,900 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 29,358 \n
+           \tON ROAD PRICE: Rs 562,143 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 7,953 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_ZXIBSVI:
+  - text: "CELERIO ZXI BS VI :\n\n
+           \tEx Showroom Price: Rs 528,500 \n
+           \tInsurance Prices: Rs 21,500 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 30,348 \n
+           \tON ROAD PRICE: Rs 581,733 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,236 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_ZXI(O)BSVI:
+  - text: "CELERIO ZXI (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 578,500 \n
+           \tInsurance Prices: Rs 22,500 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 32,685 \n
+           \tON ROAD PRICE: Rs 627,570 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,897 \n
+           \tLifetime Road Tax & Registration: Rs 58,380 "
+
+  utter_Celerio_VXIAMTBSVI:
+  - text: "CELERIO VXI  AMT BS VI :\n\n
+           \tEx Showroom Price: Rs 555,000 \n
+           \tInsurance Prices: Rs 22,000 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 31,805 \n
+           \tON ROAD PRICE: Rs 610,190 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,649 \n
+           \tLifetime Road Tax & Registration: Rs 56,780 "
+
+
+  utter_Celerio_VXIAMT(O)BSVI:
+  - text: "CELERIO VXI AMT (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 560,500 \n
+           \tInsurance Prices: Rs 22,200 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 32,108 \n
+           \tON ROAD PRICE: Rs 616,193 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,732 \n
+           \tLifetime Road Tax & Registration: Rs 57,330 "
+
+  utter_Celerio_ZXIAMTBSVI:
+  - text: "CELERIO ZXI AMT BS VI :\n\n
+           \tEx Showroom Price: Rs 578,500 \n
+           \tInsurance Prices: Rs 22,500 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 33,098 \n
+           \tON ROAD PRICE: Rs 635,483 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 9,015 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_ZXIAMT(O)BSVI:
+  - text: "CELERIO ZXI AMT (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 583,000 \n
+           \tInsurance Prices: Rs 22,850 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 33,345 \n
+           \tON ROAD PRICE: Rs 640,580 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 9,086 \n
+           \tLifetime Road Tax & Registration: Rs 59,580 "
+
+
+  utter_Celerio_XVXIBSVI:
+  - text: "CELERIO X VXI BS VI :\n\n
+           \tEx Showroom Price: Rs 511,500 \n
+           \tInsurance Prices: Rs 20,800 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 29,413 \n
+           \tON ROAD PRICE: Rs 563,098 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 7,977 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_XVXI(O)BSVI:
+  - text: "CELERIO X VXI (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 520,500 \n
+           \tInsurance Prices: Rs 21,000 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 29,908 \n
+           \tON ROAD PRICE: Rs 572,793 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,118 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Celerio_XZXIBSVI:
+  - text: "CELERIO X ZXI BS VI :\n\n
+           \tEx Showroom Price: Rs 539,200 \n
+           \tInsurance Prices: Rs 21,500 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 30,937 \n
+           \tON ROAD PRICE: Rs 593,022 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,402 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+
+  utter_Celerio_XZXI(O)BSVI:
+  - text: "CELERIO  X ZXI (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 579,800 \n
+           \tInsurance Prices: Rs 22,500 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 33,169 \n
+           \tON ROAD PRICE: Rs 636,854 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 9,039 \n
+           \tLifetime Road Tax & Registration: Rs 59,260 "
+
+  utter_Celerio_XVXIAMTBSVI:
+  - text: "CELERIO X VXI AMT BS VI :\n\n
+           \tEx Showroom Price: Rs 561,500 \n
+           \tInsurance Prices: Rs 22,000 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 32,163 \n
+           \tON ROAD PRICE: Rs 617,048 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,756 \n
+           \tLifetime Road Tax & Registration: Rs 57,430 "
+
+
+  utter_Celerio_XVXIAMT(O)BSVI:
+  - text: "CELERIO X VXI AMT (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 570,500 \n
+           \tInsurance Prices: Rs 22,300 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 32,658 \n
+           \tON ROAD PRICE: Rs 626,843 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 8,897 \n
+           \tLifetime Road Tax & Registration: Rs 58,330 "
+
+
+  utter_Celerio_XZXIAMTBSVI:
+  - text: "CELERIO X ZXI AMT BS VI :\n\n
+           \tEx Showroom Price: Rs 589,200 \n
+           \tInsurance Prices: Rs 22,600 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 33,687\n
+           \tON ROAD PRICE: Rs 646,872 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 9,180 \n
+           \tLifetime Road Tax & Registration: Rs 60,201 "
+
+  utter_Celerio_XZXIAMT(O)BSVI:
+  - text: "CELERIO X ZXI AMT (O) BS VI :\n\n
+           \tEx Showroom Price: Rs 591,800 \n
+           \tInsurance Prices: Rs 22,700 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 33,829 \n
+           \tON ROAD PRICE: Rs 649,714 \n
+           \tBasic Kit: Rs 4,500 \n
+           \tEW (Royal Platinum): Rs 9,228 \n
+           \tLifetime Road Tax & Registration: Rs 60,460 "
+
+  utter_New Dzire:
+  - text: "Type the variant of New Dzire from listed below in which you are interested : \n\n
+            \tNew Dzire LXI BS VI \n
+            \tNew Dzire VXI BS VI \n
+            \tNew Dzire ZXI BS VI \n 
+            \tNew Dzire ZXI Plus BS VI \n
+            \tNew Dzire ZXI AMT BS VI \n
+            \tNew Dzire VXI AMT BS VI \n
+            \tNew Dzire ZXI Plus AMT BS VI"
+
+  
+  utter_New Ertiga:
+  - text: "Type the variant of New Ertiga from listed below in which you are interested : \n\n
+            \tNew Gen Ertiga Smart Hybrid Automatic VXI BS VI \n
+            \tNew Gen Ertiga Smart Hybrid Automatic ZXI BS VI \n
+            \tNew Gen Ertiga Smart Hybrid VXI BS VI \n
+            \tNew Gen Ertiga Smart Hybrid ZXI BS VI \n
+            \tNew Gen Ertiga Smart Hybrid ZXI Plus BS VI \n
+            \tNew Gen Ertiga Smart Hybrid LXI BS VI" 
+ 
+
+  utter_New DZIRE LXI BS VI:
+  - text: "NEW DZIRE LXI BS VI :\n\n         
+           \tEx Showroom Price: Rs 5,98,000 \n
+           \tInsurance Prices: Rs 28,000 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 34,170 \n
+           \tON ROAD PRICE: Rs 6,61,555 \n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 10,172 \n
+           \tLifetime Road Tax & Registration: Rs 61,080 "
+
+  utter_New DZIRE VXI BS VI:
+  - text: "NEW DZIRE VXI BS VI : \n\n         
+           \tEx Showroom Price: Rs 7,04,000 \n
+           \tInsurance Prices: Rs 31,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 40,000 \n
+           \tON ROAD PRICE: Rs 7,76,385 \n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 11,965 \n
+           \tLifetime Road Tax & Registration: Rs 71,680"
+
+
+  
+  utter_New DZIRE ZXI BS VI:
+  - text: "NEW DZIRE ZXI BS VI :\n\n         
+           \tEx Showroom Price: Rs 7,73,000 \n
+           \tInsurance Prices: Rs 32,000 \n
+           \tAUTO CARD: Rs 885 \n 
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 43,796 \n
+           \tON ROAD PRICE: Rs 8,50,181 \n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 13,145 \n
+           \tLifetime Road Tax & Registration: Rs 78,581 "
+  
+  utter_New DZIRE ZXI Plus BS VI:
+  - text: "NEW DZIRE ZXI PLUS BS VI: \n\n         
+           \tEx Showroom Price: Rs 825,000\n
+           \tInsurance Prices: Rs 34,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 48,168\n
+           \tON ROAD PRICE: Rs 936,053 \n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 14,490 \n
+           \tLifetime Road Tax & Registration: Rs 86,530"
+  
+  utter_New DZIRE VXI AMT BS VI:
+  - text: "NEW DZIRE VXI AMT BS VI: \n\n         
+           \tEx Showroom Price: Rs 754,000 \n
+           \tInsurance Prices: Rs 31,500\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 42,750 \n
+           \tON ROAD PRICE: Rs 829,635\n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 14,490\n
+           \tLifetime Road Tax & Registration: Rs 86,530"
+  
+  utter_New DZIRE ZXI AMT BS VI:
+  - text: "NEW DZIRE ZXI AMT BS VI: \n\n         
+           \tEx Showroom Price: Rs 823,000 \n
+           \tInsurance Prices: Rs 33,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500   \n
+           \t5 Years Road Tax & Registration: Rs 46,546 \n
+           \tON ROAD PRICE: Rs 903,931 \n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 15,340 \n
+           \tLifetime Road Tax & Registration: Rs 83,581"
+  
+  utter_New DZIRE ZXI Plus AMT BS VI:
+  - text: "NEW DZIRE ZXI PLUS AMT BS VI: \n\n
+           \tEx Showroom Price: Rs 902,500 \n
+           \tInsurance Prices: Rs 35,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 50,918 \n
+           \tON ROAD PRICE: Rs 989,803 \n
+           \tBasic Kit: Rs 6000 \n
+           \tEW (Royal Platinum): Rs 15,340 \n
+           \tLifetime Road Tax & Registration: Rs 91,530 "
+  
+  utter_New Gen Ertiga Smart Hybrid Automatic VXI BS VI:
+  - text: "New Gen Ertiga Smart Hybrid Automatic VXI BS VI \n\n         
+           \tEx Showroom Price: Rs 976,500 \n
+           \tInsurance Prices: Rs 37,000\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 54,988\n
+           \tON ROAD PRICE: Rs 1,069,873 \n
+           \tBasic Kit: Rs 8987\n
+           \tEW (Royal Platinum): Rs 16,603 \n
+           \tLifetime Road Tax & Registration: Rs 98,931"
+
+  utter_New Gen Ertiga Smart Hybrid Automatic ZXI BS VI:
+  - text: "New Gen Ertiga Smart Hybrid Automatic ZXI BS VI \n\n         
+           \tEx Showroom Price: Rs 1,059,500\n
+           \tInsurance Prices: Rs 39,000\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 59,553\n
+           \tON ROAD PRICE: Rs 1,159,438 \n
+           \tBasic Kit: Rs 8987\n
+           \tEW (Royal Platinum): Rs 18,007 \n
+           \tLifetime Road Tax & Registration: Rs 107,231"
+
+  utter_New Gen Ertiga Smart Hybrid VXI BS VI:
+  - text: "New Gen Ertiga Smart Hybrid VXI BS VI \n\n         
+           \tEx Showroom Price: Rs 856,500 \n
+           \tInsurance Prices: Rs 34,000\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 48,388\n
+           \tON ROAD PRICE: Rs 940,273 \n
+           \tBasic Kit: Rs 8987\n
+           \tEW (Royal Platinum): Rs 15,965 \n
+           \tLifetime Road Tax & Registration: Rs 95,230"
+
+  utter_New Gen Ertiga Smart Hybrid LXI BS VI:
+  - text: "New Gen Ertiga Smart Hybrid LXI BS VI \n\n         
+           \tEx Showroom Price: Rs 781,500\n
+           \tInsurance Prices: Rs 32,000\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 44,263\n
+           \tON ROAD PRICE: Rs 859,148 \n
+           \tBasic Kit: Rs 8987\n
+           \tEW (Royal Platinum): Rs 13,287 \n
+           \tLifetime Road Tax & Registration: Rs 79,431"
+
+  utter_New Gen Ertiga Smart Hybrid ZXI BS VI:
+  - text: "New Gen Ertiga Smart Hybrid VXI BS VI \n\n         
+           \tEx Showroom Price: Rs 939,500\n
+           \tInsurance Prices: Rs 36,000\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 48,388\n
+           \tON ROAD PRICE: Rs 1,029,838 \n
+           \tBasic Kit: Rs 8987\n
+           \tEW (Royal Platinum): Rs 15,965 \n
+           \tLifetime Road Tax & Registration: Rs 95,230"
+
+
+  utter_New Gen Ertiga Smart Hybrid ZXI Plus BS VI:
+  - text: "New Gen Ertiga Smart Hybrid ZXI Plus BS VI \n\n         
+           \tEx Showroom Price: Rs 991,000\n
+           \tInsurance Prices: Rs 37,250\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 55,786\n
+           \tON ROAD PRICE: Rs 1,085,421 \n
+           \tBasic Kit: Rs 8987 \n
+           \tEW (Royal Platinum): Rs 16,850 \n
+           \tLifetime Road Tax & Registration: Rs 100,381"
+
+  utter_New Swift:
+  - text: "Type the variant of New swift from listed below in which you are interested : \n\n
+           \tNew Swift ZXI AGS BS VI \n
+           \tNew Swift LXI BS VI (2021) \n
+           \tNew Swift VXI BS VI (2021)\n
+           \tNew Swift ZXI BS VI (2021) \n
+           \tNew Swift ZXI PLUS BS VI (2021) \n
+           \tNew Swift ZXI PLUS BS VI (2021) (DUAL) \n
+           \tNew Swift VXI AMT BS VI (2021) \n
+           \tNew Swift ZXI AMT BS VI (2021) \n
+           \tNew Swift ZXI PLUS AMT BS VI (2021) \n
+           \tNew Swift ZXI PLUS AMT BS VI (2021) (DUAL)"
+
+  utter_New Swift ZXI AGS BS VI:
+  - text: "NEW SWIFT ZXI AGS BS VI: \n\n
+         
+           \tEx Showroom Price: Rs 7,25,000\n
+           \tInsurance Prices: Rs 30,800 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 41,155\n
+           \tON ROAD PRICE: Rs 7,98,340  \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 12,319 \n
+           \tLifetime Road Tax & Registration: Rs 73,780"
+
+  utter_New Swift LXI BS VI (2021):
+  - text: "NEW SWIFT LXI BS VI (2021): \n\n
+         
+           \tEx Showroom Price: Rs 573,000\n
+           \tInsurance Prices: Rs 27,200 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 32,795\n
+           \tON ROAD PRICE: Rs 634,380 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 9,747 \n
+           \tLifetime Road Tax & Registration: Rs 58,580"
+
+  utter_New Swift VXI BS VI (2021):
+  - text: "NEW SWIFT VXI BS VI (2021): \n\n
+         
+           \tEx Showroom Price: Rs 636,000\n
+           \tInsurance Prices: Rs 29,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 36,261\n
+           \tON ROAD PRICE: Rs 702,646 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 10,809 \n
+           \tLifetime Road Tax & Registration: Rs 64,881"
+
+
+  utter_New Swift ZXI BS VI (2021):
+  - text: "NEW SWIFT ZXI BS VI (2021): \n\n
+         
+           \tEx Showroom Price: Rs 699,000\n
+           \tInsurance Prices: Rs 30,500 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 39,726\n
+           \tON ROAD PRICE: Rs 770,611 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 11,883 \n
+           \tLifetime Road Tax & Registration: Rs 71,181"
+                   
+  utter_New Swift ZXI PLUS BS VI (2021):
+  - text: "NEW SWIFT ZXI PLUS BS VI (2021) : \n\n  
+         
+           \tEx Showroom Price: Rs 777,000 \n
+           \tInsurance Prices: Rs 32,300 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 44,015 \n
+           \tON ROAD PRICE: Rs 854,700 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 13,452 \n
+           \tLifetime Road Tax & Registration: Rs 78,980"
+            
+
+  utter_New Swift ZXI PLUS BS VI (2021) (DUAL):
+  - text: "NEW SWIFT ZXI PLUS BS VI (2021) (DUAL): \n\n 
+         
+           \tEx Showroom Price: Rs 791,000 \n
+           \tInsurance Prices: Rs 33,200 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500   \n
+           \t5 Years Road Tax & Registration: Rs 44,786 \n
+           \tON ROAD PRICE: Rs 870,371 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 13,452 \n
+           \tLifetime Road Tax & Registration: Rs 80,381"
+
+  utter_New Swift VXI AMT BS VI (2021):
+  - text: "NEW SWIFT VXI AMT BS VI (2021): \n\n  
+         
+           \tEx Showroom Price: Rs 686,000 \n
+           \tInsurance Prices: Rs 30,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 39,011 \n
+           \tON ROAD PRICE: Rs 756,396 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 11,658 \n
+           \tLifetime Road Tax & Registration: Rs 69,881 "
+          
+  utter_New Swift ZXI AMT BS VI (2021):        
+  - text: "NEW SWIFT ZXI AMT BS VI (2021) : \n\n
+         
+           \tEx Showroom Price: Rs 749,000 \n
+           \tInsurance Prices: Rs 31,900\n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 42,476 \n
+           \tON ROAD PRICE: Rs 824,761 \n
+           \tBasic Kit: Rs 5000 \n
+           \tEW (Royal Platinum): Rs 12,732 \n
+           \tLifetime Road Tax & Registration: Rs 76,181 "
+  
+  utter_New Swift ZXI PLUS AMT BS VI (2021):
+  - text: "NEW SWIFT ZXI PLUS AMT BS VI (2021): \n\n     
+         
+           \tEx Showroom Price: Rs 827,000\n
+           \tInsurance Prices: Rs 34,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 46,765 \n
+           \tON ROAD PRICE: Rs 909,150 \n
+           \tBasic Kit: Rs 5,000 \n
+           \tEW (Royal Platinum): Rs 14,302 \n
+           \tLifetime Road Tax & Registration: 83,980"
+  
+  utter_New Swift ZXI PLUS AMT BS VI (2021) (DUAL):
+  - text: "NEW SWIFT ZXI PLUS AMT BS VI (2021) (DUAL): \n\n
+         
+           \tEx Showroom Price: Rs 841,000 \n
+           \tInsurance Prices: Rs 34,200 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 47,535 \n
+           \tON ROAD PRICE: Rs 924,120\n
+           \tBasic Kit: Rs 5,000 \n
+           \tEW (Royal Platinum): Rs 14,302 \n
+           \tLifetime Road Tax & Registration: Rs 85,380"          
+  
+  utter_VitaraBrezza:
+  - text: "Type the variant of VITARA BREZZA from listed below in which you are interested : \n\n
+            \tVITARA BREZZA LXI BS VI \n
+            \tVITARA BREZZA VXI BS VI \n
+            \tVITARA BREZZA ZXI BS VI \n 
+            \tVITARA BREZZA ZXI plus BS VI \n
+            \tVITARA BREZZA ZXI plus BS VI (Dual) \n
+            \tVITARA BREZZA VXI AT BS VI \n
+            \tVITARA BREZZA ZXI AT BS VI \n
+            \tVITARA BREZZA ZXI plus AT BS VI \n
+            \tVITARA BREZZA ZXI plus AT BS VI (Dual)"
+
+  utter_Eeco:
+  - text: "Type the variant of EECO from listed below in which you are interested : \n\n
+           \tNEW EECO five Seater Std BS VI \n
+           \tNEW EECO five Seater AC BS VI \n
+           \tNEW EECO seven Seater Std BS VI"
+ 
+  utter_VitaraBrezzaLXI:
+  - text: "VITARA BREZZA LXI BS VI :\n\n
+         
+           \tEx Showroom Price: Rs 751,500 \n
+           \tInsurance Prices: Rs 31,500 \n
+           \tAUTO CARD: Rs 885  \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 42,613 \n
+           \tON ROAD PRICE: Rs 826,998 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 12,779 \n
+           \tLifetime Road Tax & Registration: Rs 76,430 "
+
+  utter_VitaraBreezaVXI:
+  - text: "VITARA BREZZA VXI BS VI : \n\n
+         
+           \tEx Showroom Price: Rs 857,500 \n
+           \tInsurance Prices: Rs 34,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 48,443 \n
+           \tON ROAD PRICE: Rs 941,328 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 14,573 \n
+           \tLifetime Road Tax & Registration: Rs 87,030 "
+
+  utter_VitaraBrezzaZXIZ:
+  - text: "VITARA BREZZA ZXI BS VI : \n\n
+         
+           \tEx Showroom Price: Rs 932,500 \n
+           \tInsurance Prices: Rs 35,900 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 52,568 \n
+           \tON ROAD PRICE: Rs 1,022,353 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 15,847 \n
+           \tLifetime Road Tax & Registration: Rs 94,530 "
+
+  utter_VitaraBrezzaZXIBSP:
+  - text: "VITARA BREZZA ZXI+ BS VI :\n\n
+         
+           \tEx Showroom Price: Rs 985,500 \n
+           \tInsurance Prices: Rs 37,000 \n
+           \tAUTO CARD: Rs 885 \n 
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 55,483 \n
+           \tON ROAD PRICE: Rs 1,079,368 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 16,992 \n
+           \tLifetime Road Tax & Registration: Rs 99,830 "
+  
+  utter_VitaraBrezzaZXIBSDual:
+  - text: "VITARA BREZZA ZXI+ BS VI (Dual) : \n\n
+         
+           \tEx Showroom Price: Rs 999,500 \n
+           \tInsurance Prices: Rs 37,500 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 56,253 \n
+           \tON ROAD PRICE: Rs 1,094,638 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 16,992 \n
+           \tLifetime Road Tax & Registration: Rs 101,230 "
+  
+  utter_VitaraBrezzaVXIAT:
+  - text: "VITARA BREZZA VXI AT BS VI : \n\n  
+         
+           \tEx Showroom Price: Rs 987,500 \n
+           \tInsurance Prices: Rs 37,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 55,593 \n
+           \tON ROAD PRICE: Rs 1,081,478 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 16,780 \n
+           \tLifetime Road Tax & Registration: Rs 100,030 "
+  
+  utter_VitaraBreezaZXIAT:
+  - text: "VITARA BREZZA ZXI AT BS VI : \n\n 
+         
+           \tEx Showroom Price: Rs 1,062,500 \n
+           \tInsurance Prices: Rs 39,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500   \n
+           \t5 Years Road Tax & Registration: Rs 59,718 \n
+           \tON ROAD PRICE: Rs 1,162,603 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 18,054 \n
+           \tLifetime Road Tax & Registration: Rs 107,530 "
+  
+  utter_VitaraBreezaZXIATP:
+  - text: "VITARA BREZZA ZXI+ AT BS VI : \n\n  
+         
+           \tEx Showroom Price: Rs 1,125,500 \n
+           \tInsurance Prices: Rs 40,000 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 63,183 \n
+           \tON ROAD PRICE: Rs 1,230,068 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 19,399 \n
+           \tLifetime Road Tax & Registration: Rs 113,831 "
+
+  utter_VitaraBrezzaZXIATDual:        
+  - text: "VITARA BREZZA ZXI+ AT BS VI (Dual) : \n\n
+         
+           \tEx Showroom Price: Rs 1,141,500 \n
+           \tInsurance Prices: Rs 40,300 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 64,063 \n
+           \tON ROAD PRICE: Rs 1,247,248 \n
+           \tBasic Kit: Rs 7,500 \n
+           \tEW (Royal Platinum): Rs 19,399 \n
+           \tLifetime Road Tax & Registration: Rs 115,430 "
+  
+  utter_NewEecoSeater:
+  - text: "NEW EECO 5 Seater Std BS VI : \n\n     
+         
+           \tEx Showroom Price: Rs 408,800 \n
+           \tInsurance Prices: Rs 24,800 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 26,280 \n
+           \tON ROAD PRICE: Rs 461,265 \n
+           \tBasic Kit: Rs 3,000 \n
+           \tEW (Royal Platinum): Rs 6,372 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+  
+  utter_NewEeco5SeaterAC:
+  - text: "NEW EECO 5 Seater AC BS VI : \n\n
+         
+           \tEx Showroom Price: Rs 449,500 \n
+           \tInsurance Prices: Rs 25,500 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 26,280 \n
+           \tON ROAD PRICE: Rs 502,665 \n
+           \tBasic Kit: Rs 3,000 \n
+           \tEW (Royal Platinum): Rs 7,009 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+  
+  utter_NewEeco7Seater:
+  - text: "NEW EECO 7 Seater Std BS VI : \n\n
+         
+           \tEx Showroom Price: Rs 437,800 \n
+           \tInsurance Prices: Rs 25,500 \n
+           \tAUTO CARD: Rs 885 \n
+           \tFAST TAG: Rs 500 \n
+           \t5 Years Road Tax & Registration: Rs 26,280 \n
+           \tON ROAD PRICE: Rs 490,965 \n
+           \tBasic Kit: Rs 3,000 \n
+           \tEW (Royal Platinum): Rs 6,820 \n
+           \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_Wagnor:
+  - text: "Type the variant of Wagnor from listed below in which you are interested : \n\n
+
+            \tWagonR Vxi AGS 1.0L BS VI \n
+            \tWagonR Vxi (O) AGS 1.0L BS VI \n
+            \tWagonR Lxi 1.0L BS VI \n 
+            \tWagonR Lxi (O) 1.0L BS VI \n
+            \tWagonR Vxi 1.0L BS VI \n
+            \tWagonR Vxi (O) 1.0L BS VI\n
+            \tWagonR Vxi 1.2 AGS BS VI\n
+            \tWagonR Vxi (O) 1.2L AGS BS VI\n
+            \tWagonR Zxi 1.2L AGS BS VI\n
+            \tWagonR Vxi 1.2L BS VI\n
+            \tWagonR Vxi (O) 1.2L BS VI\n
+            \tWagonR Zxi 1.2L BS VI"
+
+  utter_WagonR_Vxi_AGS(1.0L): 
+  - text: "WagonR Vxi AGS 1.0L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 563,000 \n
+          \tInsurance Prices: Rs 22,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 32,245 \n
+          \tON ROAD PRICE: Rs 619,130 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 8,779 \n
+          \tLifetime Road Tax & Registration: Rs 57,580 "          
+
+  utter_WagonR_Vxi(O)_AGS(1.0L): 
+  - text: "WagonR Vxi (O) AGS 1.0L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 570,000 \n
+          \tInsurance Prices: Rs 22,700 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 32,631 \n
+          \tON ROAD PRICE: Rs 626,716 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 8,885 \n
+          \tLifetime Road Tax & Registration: Rs 58,281 "
+
+  utter_WagonR_Lxi(O)(1.0L): 
+  - text: "WagonR Lxi (O) 1.0L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 487,500 \n
+          \tInsurance Prices: Rs 20,350 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 28,093 \n
+          \tON ROAD PRICE: Rs 537,328 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 7,599 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+
+  utter_WagonR_Lxi(1.0L): 
+  - text: "WagonR Lxi 1.0L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 480,500 \n
+          \tInsurance Prices: Rs 20,200 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 27,708 \n
+          \tON ROAD PRICE: Rs 529,793 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 7,493 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "
+          
+  utter_WagonR_Vxi(1.0L) : 
+  - text: "WagonR Vxi 1.0L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 513,000 \n
+          \tInsurance Prices: Rs 21,000 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 29,495 \n
+          \tON ROAD PRICE: Rs 564,880 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 8,000 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "                   
+
+
+  utter_WagonR_Vxi_(O)(1.0L) : 
+  - text: "WagonR Vxi (O) 1.0L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 520,000 \n
+          \tInsurance Prices: Rs 21,590 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 29,881 \n
+          \tON ROAD PRICE: Rs 572,856 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 8,107 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "                   
+
+  utter_WagonR_Vxi(1.2L)_AGS : 
+  - text: "WagonR Vxi 1.2 AGS BS VI: \n\n
+
+          \tEx Showroom Price: Rs 598,500 \n
+          \tInsurance Prices: Rs 28,900 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 34,198 \n
+          \tON ROAD PRICE: Rs 662,983 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 9,334 \n
+          \tLifetime Road Tax & Registration: Rs 61,130 "                   
+
+  utter_WagonR_Vxi(O)(1.2L)_AGS : 
+  - text: "WagonR Vxi (O) 1.2L AGS BS VI: \n\n
+
+          \tEx Showroom Price: Rs 605,500 \n
+          \tInsurance Prices: Rs 29,000 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 34,583 \n
+          \tON ROAD PRICE: Rs 670,468 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 9,440 \n
+          \tLifetime Road Tax & Registration: Rs 61,830 "                   
+
+  utter_WagonR_Zxi(1.2L)_AGS : 
+  - text: "WagonR Zxi 1.2L AGS BS VI: \n\n
+
+          \tEx Showroom Price: Rs 633,000 \n
+          \tInsurance Prices: Rs 29,500\n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 36,095 \n
+          \tON ROAD PRICE: Rs 699,980 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 9,865 \n
+          \tLifetime Road Tax & Registration: Rs 64,580 "                   
+
+  utter_WagonR_Vxi(1.2L) : 
+  - text: "WagonR Vxi 1.2L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 548,500 \n
+          \tInsurance Prices: Rs 27,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 31,448 \n
+          \tON ROAD PRICE: Rs 608,833 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 8,555 \n
+          \tLifetime Road Tax & Registration: Rs 56,280 "                   
+
+  utter_WagonR_Vxi(O)(1.2L): 
+  - text: "WagonR Vxi (O) 1.2L BS VI: \n\n
+
+          \tEx Showroom Price: Rs 555,500 \n
+          \tInsurance Prices: Rs 27,700 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 31,833 \n
+          \tON ROAD PRICE: Rs 616,418 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 8,661 \n
+          \tLifetime Road Tax & Registration: Rs 56,831 "                   
+
+  utter_WagonR_Zxi(1.2L) : 
+  - text: "WagonR Zxi 1.2L BS VI: \n\n
+  
+          \tEx Showroom Price: Rs 583,000 \n
+          \tInsurance Prices: Rs 28,500 \n
+          \tAUTO CARD: Rs 885  \n
+          \tFAST TAG: Rs 500 \n
+          \t5 Years Road Tax & Registration: Rs 33,345 \n
+          \tON ROAD PRICE: Rs 646,230 \n
+          \tBasic Kit: Rs 4,939 \n
+          \tEW (Royal Platinum): Rs 9,086 \n
+          \tLifetime Road Tax & Registration: Rs 59,580 "                  
+
+  utter_EMI:
+  - text: " TO calculate EMI follow given link: \n
+            \t https://www.marutisuzuki.com/more-from-us/finance "
+
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_submit:
+  - text: Ok. Thanks!Your visit to show-room is fixed.
+  utter_ask_date:
+    - text: Please provide the date to book an appointment visit to showroom.
+  utter_ask_time:
+    - text: Please provide the time(between 9 a.m. to 9 p.m.) to book an appointment visit to showroom.
+  utter_slots_values:
+  - text: f'{name} your details are registered.And your appointment is fixed on {date} at {time}!'
+  utter_ask_name:
+    - text: Please provide the full name.
+  utter_ask_state:
+    - text: Please provide the state to which you belong.
+  utter_ask_city:
+    - text: Please provide the city to which you belong.
+  utter_ask_dealer_name:
+    - text: Please provide the dealer name.
+  utter_ask_model_name:
+    - text: Please provide the model name.
+  utter_ask_email:
+    - text: Please provide your the email ID .
+  utter_start:
+    - text: welcome
+
+
+actions:
+- action_car_hatchback
+- action_car_sedan
+- action_car_suvmuv
+- action_car_van
+- action_car_brochures
+- utter_greet
+- action_location_link
+- utter_ask_name
+- utter_ask_state
+- utter_ask_city
+- utter_ask_dealer_name
+- utter_ask_model_name
+- utter_ask_time
+- utter_ask_date
+- validate_date_form
+- utter_ask_email
+- action_submit
+- action_store_data
+- utter_slots_values
+- utter_submit
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
